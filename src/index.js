@@ -31,14 +31,12 @@ exports.max = function max (array) {
 }
 
 exports.avg = function avg (array) {
-  if (array.length < 1 || !array)
-    return 0;
   if(array === undefined){
     return 0;
   }
-  // if(!array.length){
-  //   return 0;
-  // }
+  if(!array.length){
+    return 0;
+  }
   let sum = 0;
   for(let i = 0; i < array.length; ++i){
     sum += array[i];
